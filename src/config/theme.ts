@@ -1,0 +1,26 @@
+export const colors = {
+  ligth: {
+    primary: "#4B5563",
+    secondary: "#9CA3AF",
+    background: "#F3F4F6",
+    text: "#111827",
+    white: "#FFFFFF",
+    black: "#000000",
+    gray: "#6B7280",
+    red: "#EF4444",
+    green: "#10B981",
+    blue: "#3B82F6",
+  },
+  dark: {
+    primary: "#F3F4F6",
+    secondary: "#9CA3AF",
+    background: "#111827",
+    text: "#F3F4F6",
+    white: "#FFFFFF",
+    black: "#000000",
+    gray: "#6B7280",
+    red: "#EF4444",
+    green: "#10B981",
+    blue: "#3B82F6",
+  },
+};
