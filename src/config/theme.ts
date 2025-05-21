@@ -1,26 +1,43 @@
-export const colors = {
-  ligth: {
-    primary: "#4B5563",
-    secondary: "#9CA3AF",
-    background: "#F3F4F6",
-    text: "#111827",
-    white: "#FFFFFF",
-    black: "#000000",
-    gray: "#6B7280",
-    red: "#EF4444",
-    green: "#10B981",
-    blue: "#3B82F6",
-  },
-  dark: {
-    primary: "#F3F4F6",
-    secondary: "#9CA3AF",
-    background: "#111827",
-    text: "#F3F4F6",
-    white: "#FFFFFF",
-    black: "#000000",
-    gray: "#6B7280",
-    red: "#EF4444",
-    green: "#10B981",
-    blue: "#3B82F6",
-  },
+import { createTheme } from "@shopify/restyle";
+
+const palette = {
+  purpleLight: "#8C6FF7",
+  purplePrimary: "#5A31F4",
+  purpleDark: "#3F22AB",
+
+  greenLight: "#56DCBA",
+  greenPrimary: "#0ECD9D",
+  greenDark: "#0A906E",
+
+  black: "#0B0B0B",
+  white: "#F0F2F3",
 };
+
+const theme = createTheme({
+  colors: {
+    mainBackground: palette.white,
+    cardPrimaryBackground: palette.purplePrimary,
+  },
+  spacing: {
+    s: 8,
+    m: 16,
+    l: 24,
+    xl: 40,
+  },
+  textVariants: {
+    header: {
+      fontWeight: "bold",
+      fontSize: 34,
+    },
+    body: {
+      fontSize: 16,
+      lineHeight: 24,
+    },
+    defaults: {
+      // We can define a default text variant here.
+    },
+  },
+});
+
+export type Theme = typeof theme;
+export default theme;
